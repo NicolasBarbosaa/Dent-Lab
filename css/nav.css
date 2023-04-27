@@ -1,0 +1,39 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+#logo__image{
+    width: 72px;
+    height: auto;
+}
+li{
+    display: inline-block;
+    list-style: none;
+}
+.logo{
+    display: flex;
+    align-items: center ;
+}
+a{
+    text-decoration: none;
+    margin-right: 24px;
+    font-family: var(--texto);
+}
+span{
+    color: var(--texto-logo-cor);
+}
+.titulo__logo{
+    font-family: var(--texto-logo-fonte);
+    font-size: 40px;
+}
+.login{
+    background-color:var(--cor-botao);
+    padding: 16px;
+    border-radius: 8px;
+}
+@media (max-width: 900px){
+    .menu{
+        display: none;
+    }
+}

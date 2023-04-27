@@ -1,0 +1,16 @@
+.profissionais{
+    display: flex;
+    background-color: var(--cor-fundo-section-profissional);
+    margin: 48px;
+}
+.img__profissional{
+    width: 400px;
+    height: auto;
+}
+.hgroup__profissionais{
+    width: 600px;
+    margin: auto;
+}
+.hgroup__profissionais > h1{
+    margin-bottom: 4rem;
+}

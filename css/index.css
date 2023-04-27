@@ -1,0 +1,15 @@
+@import "nav.css";
+@import "variaveis.css";
+@import "header.css";
+@import "util.css";
+@import "vantagens.css";
+@import "mensagem.css";
+@import "main.css";
+@import "profissionais.css";
+@import "carrossel.css";
+@import  "footer.css";
+
+#estrelas__js{
+ width: 100px;
+ height: auto;
+}
