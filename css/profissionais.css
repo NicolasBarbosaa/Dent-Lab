@@ -1,16 +1,31 @@
-.profissionais{
+.profissionais {
     display: flex;
     background-color: var(--cor-fundo-section-profissional);
     margin: 48px;
 }
-.img__profissional{
+
+.img__profissional {
     width: 400px;
     height: auto;
 }
-.hgroup__profissionais{
+
+.hgroup__profissionais {
     width: 600px;
     margin: auto;
 }
-.hgroup__profissionais > h1{
+
+.hgroup__profissionais>h1 {
     margin-bottom: 4rem;
+}
+
+@media(max-width:900px) {
+    
+    .img.profissionais {
+        width: 300px;
+    }
+
+    .hgroup__profissional {
+        width: auto;
+        padding: 8px;
+    }
 }

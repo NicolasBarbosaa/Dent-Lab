@@ -24,16 +24,14 @@
     width: 200px;
   }
 
-
-  @media(max-width:900px){
-    .profissionais{
-      flex-direction: column;
-    }
-    .img.profissionais{
-      width: 300px;
-    }
-    .hgroup__profissional{
-      width: auto;
-      padding: 8px;
-    }
+@media(max-width:900px){
+  .carousel-cell{
+    width: 76%;
   }
+  .imagem__carrossel{
+    width: 120px;
+    height: 120px;
+  }
+
+}
+  

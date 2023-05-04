@@ -9,7 +9,7 @@
 @import "carrossel.css";
 @import  "footer.css";
 
-#estrelas__js{
- width: 100px;
- height: auto;
+body{
+    overflow-x: hidden;
 }
+

@@ -1,4 +1,4 @@
-.footer{
+footer{
     background: var(--cor-fundo-footer);
     height: 250px;
     margin-top: 80px;
@@ -7,8 +7,34 @@
     grid-template-rows: repeat(4, 1fr);
 }
 .info{
-    grid-column: 2/6;
+    grid-column: 3/5;
     grid-row: 2/3;
     flex-direction: column;
     gap: 16px;
+}
+.navegacao{
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+.servicos{
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+.linha{
+    grid-row: 4;
+    grid-column: 1/13;
+    width: 100%;
+    border: none;
+    border-top: 2px solid white;
+}
+@media(max-width:900px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .site, .service, .linha{
+        display: none;
+    }
 }

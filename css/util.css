@@ -18,6 +18,27 @@
     font-weight: 400;
     font-size: 18px;
 }
+.textoFooterTitulo{
+    font-family: var(--texto);
+    color: white;
+    font-weight: 900;
+    font-size: 18px;
+}
+.textoFooter{
+    font-family: var(--texto);
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+}
+.titulo__logo{
+    font-family: var(--texto-logo-fonte);
+    font-size: 24px;
+}
+.titulo__logo__footer{
+    font-family: var(--texto-logo-fonte);
+    color: white;
+    font-size: 24px;
+}
 .card{
     width: 300px;
     height: 200px;
