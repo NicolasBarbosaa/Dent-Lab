@@ -1,0 +1,12 @@
+header{
+    background-color: rgb(213, 228, 254);
+    background: linear-gradient(90deg, rgba(213,228,254,1) 1%, rgb(214,23));
+    display: grid;
+    height: 150px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+nav{
+    grid-row-start: 1;
+    grid-column: 2/12;
+}

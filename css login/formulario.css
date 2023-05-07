@@ -1,27 +1,16 @@
-.area{
+.area__formulario{
     display: flex;
     height: 100vh;
     align-items: center;
     justify-content: space-around;
     padding: 8px;
-    background-color: rgb(213, 228, 254);
 }
-.area__cadastro{
-    height: 500px;
-    width: 500px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
-.imagem__cadastro{
-    max-width: 100px;
+.imagem__login{
+    max-width: 500px;
     height: auto;
-    margin-top: 20px;
 }
 form{
-    width: 400px;
+    width: 350px;
     background-color: var(--cor-branco);
     border-radius: 5px;
     padding: 20px;
@@ -49,7 +38,7 @@ input[type= "email"]:focus, input[type="password"]:focus{
     border-width: 2px;
 }
 button{
-    width: 50%;
+    width: 100%;
     padding: 8px;
     margin: 8px, 0;
     border: none;
@@ -65,25 +54,16 @@ button{
 button:hover{
     background-image: linear-gradient(to right, #3cb0fd, #1c86ee);
 }
-.area__botoes{
-    height: 50px;
-    display: flex;
-    gap: 8px;
-}
-.area__jaPossui{
+.esqueceu__senha{
+    width: 100%;
+    text-align: right;
     color: black;
     font-family: var(--texto);
-    font-size: 14 px;
+    font-size: 12px;
+    display: inline-block;
     background-image: linear-gradient(to right, #1e90ff, #4169e1);
     -webkit-background-clip: text;
     color: transparent;
-}
-.area__login{
-    text-decoration: none;
-    font-family: var(--texto);
-    font-size: 18px;
-    font-weight: 1000;
-    color: var(--cor-roxo);
 }
 label{
     font-family: var(--texto);
@@ -91,8 +71,6 @@ label{
 .titulo__form{
     font-family: var(--texto);
     font-weight: 900;
-    color: var(--cor-botao-cadastra-se);
-    font-size: 22px;
 }
 .texto__form{
     margin-top: 8px;

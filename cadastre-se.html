@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="css/util.css">
+    <link rel="stylesheet" href="css/vantagens.css">
+    <link rel="stylesheet" href="css/variaveis.css">
+    <link rel="stylesheet" href="css cadastro/formulario.css">
+    <link rel="stylesheet" href="css login/nav.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <title>Cadastre-se</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html">
+                <ul class="logo">
+                    <li> <img id="logo__image" src="imagens/logo.svg" alt="Logo"></li>
+                    <li>
+                        <h1 class="titulo__logo">Dent<span>Lab</span></h1>
+                    </li>
+                </ul>
+            </a>
+            <ul class="menu">
+                <li><a href="index.html"> HOME</a></li>
+                <li> <a class="login" href="cadastre-se.html"> CADASTRAR-SE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="area">
+        <div class="area__cadastro">
+            <img class="imagem__cadastro" src="imagens/logo.svg" alt="imagem dentista">
+
+            <h2 class="titulo__form">Cadastre-se</h2>
+            <form action="">
+                <label for="email">Email:</label>
+                <input type="email" placeholder="Email" required>
+
+                <label for="password">Senha:</label>
+                <input type="password"  placeholder="Senha" required>
+                <label for="password">Confirme sua Senha:</label>
+                <input type="password" placeholder="Senha" required>
+                <div class="area__botoes">
+                    <button class="area__botao">Efetuar Cadastro</button>
+                    <div>
+                        <h3 class="area__jaPossui">Já tem cadastro?</h3>
+                        <a class="area__login" href="login.html">Faça seu login </a>
+                    </div>
+                </div>
+                <h1 class="animate__animated animate__bounceInLeft"></h1>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
