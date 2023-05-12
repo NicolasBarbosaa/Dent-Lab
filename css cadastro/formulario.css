@@ -26,12 +26,12 @@ form{
     border-radius: 5px;
     padding: 20px;
     box-shadow:
-  4.7px 1.9px 2px rgba(0, 0, 0, 0.318),
-  11.2px 4.5px 4.8px rgba(0, 0, 0, 0.365),
-  21.2px 8.4px 9px rgba(0, 0, 0, 0.368),
-  37.7px 15px 16.1px rgba(0, 0, 0, 0.352),
-  70.6px 28px 30.1px rgba(0, 0, 0, 0.33),
-  169px 67px 72px rgba(0, 0, 0, 0.32)
+  5.9px 2.2px 2.2px rgba(0, 0, 0, 0.035),
+  14.2px 5.3px 5.3px rgba(0, 0, 0, 0.05),
+  26.8px 10px 10px rgba(0, 0, 0, 0.06),
+  47.8px 17.9px 17.9px rgba(0, 0, 0, 0.069),
+  89.4px 33.4px 33.4px rgba(0, 0, 0, 0.08),
+  214px 80px 80px rgba(0, 0, 0, 0.11)
 ;
 }
 input[type="email"], input[type="password"]{

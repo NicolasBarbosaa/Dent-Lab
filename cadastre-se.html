@@ -13,7 +13,13 @@
     <link rel="stylesheet" href="css cadastro/formulario.css">
     <link rel="stylesheet" href="css login/nav.css">
     <link rel="stylesheet" href="css/nav.css">
+    <script src="js/fire-base-config.js" defer></script>
+    <script src="js/register.js" defer></script>
     <title>Cadastre-se</title>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
 </head>
 
 <body>
@@ -41,14 +47,16 @@
             <h2 class="titulo__form">Cadastre-se</h2>
             <form action="">
                 <label for="email">Email:</label>
-                <input type="email" placeholder="Email" required>
+                <input id="email" type="email" placeholder="Email" required>
 
                 <label for="password">Senha:</label>
-                <input type="password"  placeholder="Senha" required>
+                <input id="password" type="password" placeholder="Senha" required>
+
                 <label for="password">Confirme sua Senha:</label>
-                <input type="password" placeholder="Senha" required>
+                <input id="confirmedPassword" type="password" placeholder="Senha" required>
+                
                 <div class="area__botoes">
-                    <button class="area__botao">Efetuar Cadastro</button>
+                    <button id="registerButton" class="area__botao">Efetuar Cadastro</button>
                     <div>
                         <h3 class="area__jaPossui">Já tem cadastro?</h3>
                         <a class="area__login" href="login.html">Faça seu login </a>
