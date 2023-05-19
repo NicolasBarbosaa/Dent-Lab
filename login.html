@@ -20,8 +20,12 @@
     <link rel="stylesheet" href="css login/formulario.css">
     <link rel="stylesheet" href="css login/nav.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <script src="js/fire-base-config.js"></script>
-    <script src="js/register.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="js/fire-base-config.js" defer></script>
+    <script src="js/login.js" defer></script>
+    <!-- defer ele coloca para ler o outro arquivo por ultimo-->
     <title>Dent Lab-Login</title>
 </head>
 <body>
@@ -49,11 +53,11 @@
             <h2 class="titulo__form"> Olá 👋, tudo bem?</h2>
             <p class="texto__form">Entre com o seu e-mail e senha em nosso sistema. </p>
             <label for="email">Email:</label>
-            <input type="email" placeholder="Email" required>
+            <input id="email" type="email" placeholder="Email" required>
             <label for="password">Senha:</label>
-            <input type="password" placeholder="Senha" required>
+            <input id="password" type="password" placeholder="Senha" required>
             <a href="" class="esqueceu__senha">Esqueceu sua senha?</a>
-            <button>ENTRAR</button>
+            <button id="btnlogin">ENTRAR</button>
             <h1 class="animate__animated animate__bounceInLeft"></h1>
         </form>
 

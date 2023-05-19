@@ -7,7 +7,8 @@ async function registerUser(email, password, event){
     //try catch é um "if" voltado para o erro. try= tentar catch = pegar 
     try{
         //faz o processo de autenticação passando email e senha
-        const userCredential = await auth.createdUserWithEmailAndPassword(email, password)
+        //auth == obj do firebase
+        const userCredential = await auth.createUserWith (email, password);
         const user = userCredential.user;
         //insere os dados no banco de dados, acessadno a coleção users no firebase
     await db.collection("users").doc(user.uid).set(
@@ -15,15 +16,16 @@ async function registerUser(email, password, event){
             email:email,
             uid: user.uid
         }
-    )
-
+    );
+        alert("Cadastro realizado com sucesso")
     }catch(error){
         console.log(error);
     }
 }
 
 //pegar os dados do formulario e inserir na função
-document.getElementById("registerButton").addEventListener("click", async(event) =>{
+//async me fala que eu trabalho com dados futuros que irão voltar
+document.getElementById("registerButton").addEventListener("click", async (event)=>{
     const email= document.getElementById("email").value;
     const password = document.getElementById("password").value;
     const confirmedPassword = document.getElementById("confirmedPassword").value;
@@ -34,5 +36,5 @@ document.getElementById("registerButton").addEventListener("click", async(event)
     }
 
     //insere os dados na função
-    registerUser(email, password);
+    registerUser(email, password, event);
 });
